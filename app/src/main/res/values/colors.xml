@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!-- Text -->
+    <color name="textColorPrimary">@color/p900</color>
+    <color name="textColorSecondary">@color/p800</color>
+    <color name="textColorTertiary">@color/p700</color>
+
+    <color name="statusBarColor">@color/p900</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="dividerColor">@color/p300</color>
+    <color name="navigationBarColor">@color/p900</color>
+    <color name="toolbarBackground">@color/p900</color>
 </resources>
