@@ -7,14 +7,22 @@
 
 package cl.ucn.disc.dsm.atorres.thenews;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
+import cl.ucn.disc.dsm.atorres.thenews.activities.MainActivity;
 import cl.ucn.disc.dsm.atorres.thenews.models.Article;
 import cl.ucn.disc.dsm.atorres.thenews.models.NewsAPI;
+import cl.ucn.disc.dsm.atorres.thenews.orm.ArticleRepository;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -23,6 +31,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
+
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  *
@@ -93,9 +103,10 @@ public final class NewsController {
 
         // News
         final NewsAPI news = newsCall.execute().body();
-        //log.debug("News status: {}, totalResult: {}", news.getStatus(), news.getTotalResults());
+        log.debug("News status: {}, totalResult: {}", news.getStatus(), news.getTotalResults());
 
         return news.getArticles();
 
     }
+
 }

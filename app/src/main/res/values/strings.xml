@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">The News</string>
     <string name="empty">No Data</string>
-    <string name="acra_toast_text">F to pay respects</string>
-    <string name="dialog_text">F to pay respects</string>
-    <string name="dialog_comment">Something went wrong</string>
 </resources>

@@ -81,7 +81,6 @@ public final class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Vi
 
         holder.title.setText(article.getTitle());
         holder.description.setText(article.getDescription());
-        //holder.image.setImageURI(article.getUrlToImage());
         Picasso.get()
                 .load(article.getUrlToImage())
                 .placeholder(R.drawable.image_not_found)

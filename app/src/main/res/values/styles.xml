@@ -22,7 +22,7 @@
 
     <style name="TextLarge" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/textColorPrimary</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 

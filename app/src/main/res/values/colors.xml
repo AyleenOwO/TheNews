@@ -11,5 +11,5 @@
     <color name="windowBackground">#FFFFFF</color>
     <color name="dividerColor">@color/p300</color>
     <color name="navigationBarColor">@color/p900</color>
-    <color name="toolbarBackground">@color/p900</color>
+    <color name="toolbarBackground">@color/p1000</color>
 </resources>
